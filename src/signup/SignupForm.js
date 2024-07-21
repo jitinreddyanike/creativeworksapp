@@ -1,11 +1,12 @@
 import { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 function SignupForm() {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Username:', username);
@@ -14,8 +15,12 @@ function SignupForm() {
     console.log('Confirm Password:', confirmPassword);
   };
 
+  const goToLogin = () => {
+    navigate('/login');
+  };
+
   return (
-    <div class="SignupForm">
+    <div className="SignupForm">
       <h1>Signup Form</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -67,6 +72,7 @@ function SignupForm() {
           </label>
         </div>
         <button type="submit">Submit</button>
+        <button onClick={goToLogin}>Home</button>
       </form>
     </div>
   );
