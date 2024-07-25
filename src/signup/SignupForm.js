@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
+import './signup.css'
+
 function SignupForm() {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
@@ -71,8 +74,11 @@ function SignupForm() {
             />
           </label>
         </div>
-        <button type="submit">Submit</button>
-        <button onClick={goToLogin}>Home</button>
+        <div class="buttons">
+        <button  type="submit">Submit</button>
+        
+        <button onClick={goToLogin}>Login</button>
+        </div>
       </form>
     </div>
   );

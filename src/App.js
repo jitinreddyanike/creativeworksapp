@@ -7,13 +7,16 @@ import {
   Navigate,
 } from "react-router-dom";
 
+import Navbar from './navbar/Navbar.js';
 import SignupForm from './signup/SignupForm';
 import LoginForm from './login/LoginForm.js';
 import HomeForm from './home/HomeForm.js';
-import { useNavigate } from 'react-router-dom';
+
 function App() {
   return (
+   
     <Router>
+       <Navbar />
       <Routes>
         <Route
           index 

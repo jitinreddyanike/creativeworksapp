@@ -1,0 +1,77 @@
+/* SignupForm.css */
+
+.SignupForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f7f7f7; /* Light background color */
+    font-family: Arial, sans-serif;
+  }
+  
+  .SignupForm h1 {
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Darker color for the heading */
+  }
+  
+  .SignupForm form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Fixed width for the form */
+    padding: 20px; /* Padding inside the form */
+    background-color: #fff; /* White background for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .SignupForm form div {
+    margin-bottom: 15px; /* Space between form fields */
+  }
+  
+  .SignupForm label {
+    display: block;
+    margin-bottom: 5px; /* Space between label and input */
+    color: #555; /* Slightly darker color for labels */
+  }
+  
+  .SignupForm input {
+    width: 100%; /* Full width of the parent container */
+    padding: 8px; /* Padding inside the input fields */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  .SignupForm input:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between; /* Space between the two buttons */
+  }
+  
+  .buttons button {
+    padding: 10px 15px; /* Padding inside buttons */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for buttons */
+    background-color: #007BFF; /* Primary button color */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .buttons button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .buttons button:last-child {
+    background-color: #6c757d; /* Secondary button color */
+  }
+  
+  .buttons button:last-child:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+  }
+  

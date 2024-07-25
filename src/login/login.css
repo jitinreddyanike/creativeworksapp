@@ -1,0 +1,89 @@
+/* LoginForm.css */
+
+.LoginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f7f7f7; /* Light background color */
+    font-family: Arial, sans-serif;
+  }
+  
+  .LoginForm h1 {
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Darker color for the heading */
+  }
+  
+  .LoginForm form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Fixed width for the form */
+    padding: 20px; /* Padding inside the form */
+    background-color: #fff; /* White background for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .LoginForm form div {
+    margin-bottom: 15px; /* Space between form fields */
+  }
+  
+  .LoginForm label {
+    display: block;
+    margin-bottom: 5px; /* Space between label and input */
+    color: #555; /* Slightly darker color for labels */
+  }
+  
+  .LoginForm input {
+    width: 100%; /* Full width of the parent container */
+    padding: 8px; /* Padding inside the input fields */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  .LoginForm input:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .LoginForm button {
+    padding: 10px 15px; /* Padding inside buttons */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for buttons */
+    background-color: #007BFF; /* Primary button color */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .LoginForm button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .LoginForm h6 {
+    margin-top: 20px; /* Space above the text */
+    color: #555; /* Slightly darker color for text */
+  }
+  /* Center the signup button and give it a distinct color */
+.signupbutton {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 20px; /* Adds space above the button */
+  }
+  
+  .signupbutton button {
+    padding: 10px 15px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for the button */
+    background-color: #28a745; /* Green background color */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .signupbutton button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  

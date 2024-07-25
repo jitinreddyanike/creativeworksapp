@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+
+import './login.css'
 function LoginForm() {
     const [loginUserName, setLoginUsername] = useState('');
     const [loginPassword, setLoginPassword] = useState('');
@@ -16,12 +18,16 @@ function LoginForm() {
         navigate('/');
       };
 
+    const goToSignup = () => {
+        navigate('/signup');
+      };
+
     return(
         <div className = "LoginForm">
-            <h1> Login Form</h1>
+            <h1> Login</h1>
             <form onSubmit={loginSubmit}>
                 <div>
-                    <label> UserName </label>
+                    <label> Username </label>
                     <input 
                         type ="text" 
                         value = {loginUserName}
@@ -40,12 +46,10 @@ function LoginForm() {
                         required
                     />    
                 </div>
-                <button type="submit">Submit</button>
-                <div>
-                    <h6> not logged in user ?</h6>
-                    <button onClick={goTohome}>Home</button>
-                    {/* <Link to="./signup/signupForm.js" style={{color: 'white'}}> signup </Link> */}
-                </div>
+                <button  type="submit">Submit</button>
+                <div class = "signupbutton"> <button onClick={goToSignup}>Signup</button> </div>
+                
+                
             </form>
         </div>
     )

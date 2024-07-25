@@ -1,0 +1,80 @@
+/* home.css */
+
+/* Define keyframes for the welcome message animation */
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Define keyframes for the background color transition */
+  @keyframes backgroundFade {
+    0% {
+      background-color: #f7f7f7; /* Bright color */
+    }
+    100% {
+      background-color: #333; /* Dark color */
+    }
+  }
+  
+  /* Apply animation to the header background */
+  .App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: backgroundFade 5s ease-in-out forwards; /* 5s duration for background transition */
+    text-align: center; /* Center the text in the header */
+  }
+  
+  /* Apply animation and style to the welcome message */
+  .App-header h1 {
+    animation: slideIn 1s ease-out;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+    font-size: 4rem; /* Large font size initially */
+    color: #fff; /* White color for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for better visibility */
+    transition: font-size 5s ease-in-out; /* Smooth transition for font size */
+  }
+  
+  /* Adjust the font size of the welcome message based on screen size */
+  @media (min-width: 768px) {
+    .App-header h1 {
+      font-size: 5rem; /* Adjust font size for larger screens */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .App-header h1 {
+      font-size: 3rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  /* Optional: Style buttons (uncomment if using buttons) */
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: #0056b3;
+  }
+  
