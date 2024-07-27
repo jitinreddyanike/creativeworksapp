@@ -23,7 +23,7 @@ function SignupForm() {
   };
 
   return (
-    <div className="SignupForm">
+    <div className="SignupForm btn btn-primary">
       <h1>Signup Form</h1>
       <form onSubmit={handleSubmit}>
         <div>

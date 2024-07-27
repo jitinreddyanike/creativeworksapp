@@ -76,3 +76,10 @@ notes:
 npm start --> To start the server
 npm install --> to build the project
 npm install --legacy-peer-deps --> to build the project by ignoreing peer dependencies.
+
+
+
+pending
+
+to write unit tests
+Implement special fucntion to action button 
